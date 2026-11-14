@@ -89,7 +89,7 @@ export default function HomePage() {
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 10 }}>
             <svg viewBox="0 0 44 44" width="58" height="58" aria-hidden="true">
               <circle cx="22" cy="22" r="18" fill="none" stroke="#ece5d7" strokeWidth="5" />
-              <circle cx="22" cy="22" r="18" fill="none" stroke="#c09a55" strokeWidth="5" strokeDasharray={`${ring.toFixed(1)} 113.1`} strokeLinecap="round" transform="rotate(-90 22 22)" style={{ transition: "stroke-dasharray .5s" }} />
+              <circle cx="22" cy="22" r="18" fill="none" stroke="#C0835A" strokeWidth="5" strokeDasharray={`${ring.toFixed(1)} 113.1`} strokeLinecap="round" transform="rotate(-90 22 22)" style={{ transition: "stroke-dasharray .5s" }} />
             </svg>
             <div>
               <div className="oa-big">{Math.min(thisWeek, 99)}<small>/{WEEK_TARGET}</small></div>

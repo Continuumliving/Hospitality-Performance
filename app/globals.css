@@ -2,40 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted brand fonts (size-adjusted to keep the app's original proportions) */
+@font-face { font-family: "HP Serif"; src: url("/fonts/fraunces-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; size-adjust: 86%; }
+@font-face { font-family: "HP Serif"; src: url("/fonts/fraunces-latin-500-normal.woff2") format("woff2"); font-weight: 500 700; font-style: normal; font-display: swap; size-adjust: 86%; }
+@font-face { font-family: "HP Serif"; src: url("/fonts/fraunces-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; size-adjust: 86%; }
+@font-face { font-family: "HP Serif"; src: url("/fonts/fraunces-latin-500-italic.woff2") format("woff2"); font-weight: 500 700; font-style: italic; font-display: swap; size-adjust: 86%; }
+@font-face { font-family: "HP Sans"; src: url("/fonts/inter-tight-latin-300-normal.woff2") format("woff2"); font-weight: 300; font-display: swap; size-adjust: 94%; }
+@font-face { font-family: "HP Sans"; src: url("/fonts/inter-tight-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; size-adjust: 94%; }
+@font-face { font-family: "HP Sans"; src: url("/fonts/inter-tight-latin-500-normal.woff2") format("woff2"); font-weight: 500 700; font-display: swap; size-adjust: 94%; }
+
 :root {
-  --ink: #15181f;
-  --ink-soft: #34363c;
-  --stone-deep: #8a6a2e;
+  --ink: #0F1A15;
+  --ink-soft: #2E3A33;
+  --stone-deep: #9A5E39;
   --stone: #8d8a84;
   --stone-soft: #b9b4aa;
   --sand: #e3dccd;
   --warm: #ece5d7;
   --bone: #f6f2ea;
   --cream: #fffdf8;
-  --terracotta: #c09a55;
-  --terracotta-soft: #e9d9b8;
-  --terracotta-tint: #f4ead6;
-  --olive: #5d6677;
-  --olive-soft: #b9bfca;
-  --olive-tint: #e6e8ed;
-  --hair: rgba(21, 24, 31, 0.1);
-  --hair-med: rgba(21, 24, 31, 0.2);
-  --hair-strong: rgba(21, 24, 31, 0.35);
-  --serif: "Cormorant Garamond", Georgia, serif;
-  --sans: "Jost", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --terracotta: #C0835A;
+  --terracotta-soft: #EBD3C2;
+  --terracotta-tint: #F5E6DA;
+  --olive: #6E7F74;
+  --olive-soft: #B9C6BD;
+  --olive-tint: #E4EAE5;
+  --hair: rgba(15, 26, 21, 0.1);
+  --hair-med: rgba(15, 26, 21, 0.2);
+  --hair-strong: rgba(15, 26, 21, 0.35);
+  --serif: "HP Serif", Georgia, serif;
+  --sans: "HP Sans", "Helvetica Neue", Arial, sans-serif;
   /* Owners App */
   --paper: #f6f2ea;
   --card: #fffdf8;
   --line: #e3dccd;
   --soft: #5a5a60;
   --mute: #8d8a84;
-  --navy: #15181f;
-  --navy2: #1f2430;
-  --gold: #c09a55;
-  --gold-d: #8a6a2e;
-  --gold-l: #e9d9b8;
+  --navy: #0F1A15;
+  --navy2: #17271F;
+  --gold: #C0835A;
+  --gold-d: #9A5E39;
+  --gold-l: #EBD3C2;
   --ok: #4f7a52;
-  --lo: #b9bfca;
+  --lo: #B9C6BD;
 }
 
 * {
@@ -1066,7 +1075,7 @@ body { background: var(--paper); }
 .oa-h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; line-height: 1.12; }
 .oa-sub { font-size: 14px; color: var(--mute); }
 .oa-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 6px; }
-.oa-card { background: var(--card); border-radius: 22px; box-shadow: 0 10px 26px -18px rgba(21,24,31,.45); }
+.oa-card { background: var(--card); border-radius: 22px; box-shadow: 0 10px 26px -18px rgba(15,26,21,.45); }
 .oa-dark { background: var(--navy); color: #f3eee4; }
 .oa-hero { position: relative; display: block; height: 250px; border-radius: 26px; overflow: hidden; color: #f6f2ea; background: var(--navy); }
 .oa-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -1089,7 +1098,7 @@ body { background: var(--paper); }
 .oa-av { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex: none; }
 .oa-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); flex: none; }
 .oa-event-mini { position: relative; overflow: hidden; padding: 20px 18px; min-height: 112px; display: block; }
-.oa-wm { position: absolute; color: #2c3242; pointer-events: none; }
+.oa-wm { position: absolute; color: #22342B; pointer-events: none; }
 .oa-event-mini .oa-wm { right: -22px; top: -14px; width: 150px; height: 150px; }
 .oa-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
 .oa-day { text-align: center !important; padding: 10px 0 !important; border-radius: 14px; background: var(--warm) !important; }
@@ -1163,7 +1172,7 @@ body { background: var(--paper); }
 .auth-screen h1, .auth-screen .h1 { font-family: var(--serif); font-weight: 500; font-size: 44px; line-height: 1.02; }
 .auth-screen .h1 em, .auth-screen h1 em { color: var(--gold-d); font-style: italic; }
 .auth-screen .intro { color: var(--soft); font-size: 15px; line-height: 1.6; }
-.auth-form { background: var(--card); border-radius: 22px; padding: 22px 20px 20px; box-shadow: 0 10px 26px -18px rgba(21,24,31,.45); flex: none; }
+.auth-form { background: var(--card); border-radius: 22px; padding: 22px 20px 20px; box-shadow: 0 10px 26px -18px rgba(15,26,21,.45); flex: none; }
 .auth-screen .field label { font-size: 11px; letter-spacing: .18em; color: var(--mute); }
 .auth-screen .field input, .auth-screen .field select { border: 1px solid var(--line) !important; background: var(--paper) !important; border-radius: 14px !important; padding: 13px 14px !important; font-size: 16px !important; margin-top: 8px; width: 100%; color: var(--ink); }
 .auth-screen .field input:focus, .auth-screen .field select:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
@@ -1178,7 +1187,7 @@ body { background: var(--paper); }
 .oa-bubble-row.me { align-self: flex-end; align-items: flex-end; }
 .oa-bubble-head { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--mute); letter-spacing: .04em; margin: 8px 0 4px; }
 .oa-bubble-head img { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; }
-.oa-bubble { background: var(--card); padding: 11px 15px; border-radius: 18px 18px 18px 6px; font-size: 15.5px; line-height: 1.45; white-space: pre-wrap; word-break: break-word; box-shadow: 0 6px 16px -14px rgba(21,24,31,.5); }
+.oa-bubble { background: var(--card); padding: 11px 15px; border-radius: 18px 18px 18px 6px; font-size: 15.5px; line-height: 1.45; white-space: pre-wrap; word-break: break-word; box-shadow: 0 6px 16px -14px rgba(15,26,21,.5); }
 .oa-bubble.me { background: var(--navy); color: #f3eee4; border-radius: 18px 18px 6px 18px; }
 .oa-bubble-time { font-size: 11px; color: var(--mute); margin-top: 4px; letter-spacing: .03em; }
 .oa-compose { position: fixed; left: 0; right: 0; bottom: calc(66px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; gap: 10px; align-items: flex-end; padding: 10px max(16px, calc((100vw - 480px) / 2 + 16px)); background: linear-gradient(0deg, var(--paper) 70%, rgba(246,242,234,0)); }
@@ -1223,7 +1232,7 @@ body { background: var(--paper); }
 .oa-k { font-size: 10.5px; letter-spacing: .14em; color: var(--mute); }
 .oa-kv-big { font-family: var(--serif); font-size: 32px; margin-top: 4px; }
 .oa-kv-big small { font-family: var(--sans); font-size: 14px; color: var(--mute); }
-.oa-note { margin: 6px 0 0; font-size: 15px; line-height: 1.55; color: #34363c; white-space: pre-wrap; }
+.oa-note { margin: 6px 0 0; font-size: 15px; line-height: 1.55; color: #2E3A33; white-space: pre-wrap; }
 .oa-focus { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
 .oa-status { font-size: 11px; letter-spacing: .08em; padding: 5px 10px; border-radius: 999px; background: var(--warm); color: var(--mute); white-space: nowrap; }
 .oa-status.ok { background: #e6efe4; color: var(--ok); }

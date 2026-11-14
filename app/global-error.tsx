@@ -21,7 +21,7 @@ export default function GlobalError({
       <body
         style={{
           fontFamily:
-            "'Cormorant Garamond', Georgia, serif",
+            "Georgia, serif",
           background: "#f5f1ea",
           color: "#1a1817",
           margin: 0,
