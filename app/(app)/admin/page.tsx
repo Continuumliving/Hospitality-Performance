@@ -57,7 +57,7 @@ export default async function AdminIndex() {
       <Link href="/account" className="oa-back">‹ Account</Link>
       <div>
         <div className="oa-eyebrow">Coach &amp; admin</div>
-        <h1 className="oa-h1">The house</h1>
+        <h1 className="oa-h1">The programme</h1>
       </div>
 
       <div className="oa-tiles">
@@ -72,13 +72,13 @@ export default async function AdminIndex() {
 
       <div className="oa-sec"><h2 className="oa-h2">At a glance</h2></div>
       <div className="oa-grid4">
-        <div className="oa-card oa-stat"><div className="k">Residents</div><div className="oa-big" style={{ marginTop: 6 }}>{residents.length}</div></div>
+        <div className="oa-card oa-stat"><div className="k">Team members</div><div className="oa-big" style={{ marginTop: 6 }}>{residents.length}</div></div>
         <div className="oa-card oa-stat"><div className="k">Booked · 7 days</div><div className="oa-big" style={{ marginTop: 6 }}>{upcomingBookings}</div></div>
         <div className="oa-card oa-stat"><div className="k">Sessions · 30 days</div><div className="oa-big" style={{ marginTop: 6 }}>{past.filter((b) => b.attended !== false).length}</div></div>
         <div className="oa-card oa-stat"><div className="k">Attendance</div><div className="oa-big" style={{ marginTop: 6 }}>{attendedPct === null ? "—" : `${attendedPct}%`}</div></div>
       </div>
 
-      <div className="oa-sec"><h2 className="oa-h2">Residents</h2><span className="oa-sub">{residents.length}</span></div>
+      <div className="oa-sec"><h2 className="oa-h2">Team members</h2><span className="oa-sub">{residents.length}</span></div>
       {residents.length === 0 ? (
         <div className="oa-card oa-empty"><p>No team members yet.</p></div>
       ) : (
