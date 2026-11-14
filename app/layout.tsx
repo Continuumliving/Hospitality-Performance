@@ -4,11 +4,11 @@ export const metadata: Metadata = {
   title: "Hospitality Performance · Team",
   description:
     "Training, team events, your coach and your personal health brief: the wellbeing programme for your team.",
-  applicationName: "HP",
+  applicationName: "Hospitality Performance",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "HP",
+    title: "Hospitality",
     statusBarStyle: "default",
   },
   formatDetection: {

@@ -1,9 +1,17 @@
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 100 100" aria-hidden="true">
-      <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      <text x="50" y="50" textAnchor="middle" dominantBaseline="central" fill="currentColor"
-        style={{ fontFamily: "var(--serif), Georgia, serif", fontSize: 40, fontStyle: "italic", letterSpacing: "1px" }}>HP</text>
+    <svg className={className} viewBox="0 0 36 36" aria-hidden="true">
+      <circle cx="18.00" cy="5.40" r="2" fill="currentColor" />
+      <circle cx="25.41" cy="7.81" r="2" fill="currentColor" />
+      <circle cx="29.98" cy="14.11" r="2" fill="currentColor" />
+      <circle cx="29.98" cy="21.89" r="2" fill="currentColor" />
+      <circle cx="25.41" cy="28.19" r="2" fill="currentColor" />
+      <circle cx="18.00" cy="30.60" r="2" fill="currentColor" />
+      <circle cx="10.59" cy="28.19" r="2" fill="currentColor" />
+      <circle cx="6.02" cy="21.89" r="2" fill="currentColor" />
+      <circle cx="6.02" cy="14.11" r="2" fill="currentColor" />
+      <circle cx="10.59" cy="7.81" r="2" fill="currentColor" />
+      <circle cx="18" cy="18" r="3.6" fill="currentColor" />
     </svg>
   );
 }
