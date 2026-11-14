@@ -540,8 +540,7 @@ insert into classes (day, "time", title, venue, intensity, coach, duration_min, 
   (2, '15:00', 'Pilates & Core Stability',    'On site',  'low',  'Tomash', 45, 10, 'Restore', 'pilates',  'Posture, core and back health. Ideal between shifts.'),
   (3, '07:00', 'Social Endurance Run',        'Outdoor',  'high', 'Tomash', 50, 10, 'Explore', 'hike',     'An easy group run at conversation pace. Every level welcome.'),
   (4, '15:00', 'HYROX & Functional',          'On site',  'high', 'Tomash', 50, 10, 'Push',    'kb',       'Functional stations and short intervals. Scaled to your level.'),
-  (5, '07:30', 'Boxing & Conditioning',       'On site',  'high', 'Tomash', 50, 10, 'Push',    'boxing',   'Pads, bag work and conditioning rounds. No experience needed.'),
-  (5, '15:00', 'Recovery & Mobility Flow',    'On site',  'low',  'Tomash', 45, 12, 'Restore', 'yoga',     'Slow mobility and breathing to recover from long shifts.');
+  (5, '07:30', 'Boxing & Conditioning',       'On site',  'high', 'Tomash', 50, 10, 'Push',    'boxing',   'Pads, bag work and conditioning rounds. No experience needed.');
 
 delete from events;
 insert into events (date, "time", title, venue, host, capacity, kind, image, description) values
